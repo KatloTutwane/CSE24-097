@@ -1,0 +1,87 @@
+/* Custom styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+}
+
+body {
+    padding-top: 56px;
+    margin: 0;
+    padding: 0;
+}
+
+/*.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x600?text=Game+Reviews');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}*/
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    margin-right: 5px;
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Review page specific */
+.review-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--review-bg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.review-score {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.pros-list li::before {
+    content: "✓";
+    color: green;
+    margin-right: 8px;
+}
+
+.cons-list li::before {
+    content: "✗";
+    color: red;
+    margin-right: 8px;
+}
+
+ /*contant info*/
+ .contact-info-card {
+            transition: transform 0.3s ease;
+        }
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+        }
+        .form-control:focus {
+            border-color: #6c757d;
+            box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25);
+        }
+        .submit-btn {
+            background-color: #6c757d;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #5a6268;
+            transform: translateY(-2px);
+        }
