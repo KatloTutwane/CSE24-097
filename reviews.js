@@ -209,10 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Keep all your existing helper functions:
-// displayGames(), getStarRating(), searchGames()
-// ... (no changes needed to these functions) ...
-
+// displayGames(), 
 function displayGames(gamesToDisplay) {
     const container = document.getElementById('gameContainer');
     container.innerHTML = '';
@@ -257,6 +254,8 @@ function displayGames(gamesToDisplay) {
         container.innerHTML += gameCard;
     });
 }
+
+
 
 function getStarRating(rating) {
     const fullStars = Math.floor(rating);
