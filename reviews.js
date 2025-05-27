@@ -66,9 +66,6 @@ const games = [
         review: "The latest installment in the popular FPS franchise.",
         releaseDate: "2023-11-10"
     },
-
-    
-
     {
         id: 7,
         title: "Baldur's Gate 3",
@@ -157,7 +154,6 @@ const games = [
         review: "A mind-bending survival horror with incredible atmosphere.",
         releaseDate: "2023-10-27"
     }
-
 ];
 
 // Display games on page load with pagination
@@ -187,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const page2Games = games.slice(Math.ceil(games.length / 2));
         displayGames(page2Games);
         
-        // Update pagination links
+        //  pagination links
         document.querySelector('.pagination').innerHTML = `
             <li class="page-item">
                 <a class="page-link" href="reviewsPage1.html">Previous</a>
@@ -229,7 +225,7 @@ function displayGames(gamesToDisplay) {
         const gameCard = `
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100">
-                    <img src="${game.image}" class="card-img-top" alt="${game.title}">
+                    <img src="${game.image}" class="card-img-top" alt="${game.title} cover art" onerror="this.onerror=null; this.src='images/placeholder.jpg'; this.alt='${game.title} cover image not available'">
                     <div class="card-body">
                         <h5 class="card-title">${game.title}</h5>
                         <div class="mb-2">
@@ -242,7 +238,6 @@ function displayGames(gamesToDisplay) {
                         </div>
                         <p class="card-text">${game.review}</p>
                         <a href="${game.filename}" class="btn btn-outline-primary">Read Review</a>
-
                     </div>
                     <div class="card-footer bg-transparent">
                         <small class="text-muted">Released: ${new Date(game.releaseDate).toLocaleDateString()}</small>
@@ -254,8 +249,6 @@ function displayGames(gamesToDisplay) {
         container.innerHTML += gameCard;
     });
 }
-
-
 
 function getStarRating(rating) {
     const fullStars = Math.floor(rating);
@@ -274,7 +267,6 @@ function getStarRating(rating) {
     
     return stars;
 }
-
 
 function searchGames() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();

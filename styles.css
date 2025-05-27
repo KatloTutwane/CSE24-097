@@ -10,15 +10,11 @@ body {
     padding: 0;
 }
 
-/*.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x600?text=Game+Reviews');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-}*/
+
 
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #9daab4;
 }
 
 .card:hover {
