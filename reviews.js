@@ -25,8 +25,8 @@ const games = [
     {
         id: 3,
         title: "God of War: Ragnarök",
-        filename:"images/godofwar.jpg",
-        image: "images/god of war ragnarok.jpg",
+        filename:"GodOfWarRagnarok.html",
+        image: "images/godofwar.jpg",
         genre: "Action",
         platforms: ["PS5"],
         rating: 5,
