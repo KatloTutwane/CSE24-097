@@ -1,4 +1,4 @@
-/* Custom styles */
+
 :root {
     --primary-color: #0d6efd;
     --secondary-color: #6c757d;
@@ -34,7 +34,7 @@ body {
     color: var(--primary-color) !important;
 }
 
-/* Review page specific */
+
 .review-header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--review-bg);
     background-size: cover;
@@ -61,7 +61,7 @@ body {
     margin-right: 8px;
 }
 
- /*images*/
+ 
  .card-img-top {
   width: 100%;            
   height: 200px;          
@@ -70,7 +70,7 @@ body {
 }
 
 
- /*contant info*/
+
  .contact-info-card {
             transition: transform 0.3s ease;
         }

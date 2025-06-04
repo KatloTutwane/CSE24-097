@@ -1,4 +1,4 @@
-// Games data - shared between both pages
+
 const games = [
     {
         id: 1,
@@ -156,17 +156,16 @@ const games = [
     }
 ];
 
-// Display games on page load with pagination
+
 document.addEventListener('DOMContentLoaded', function() {
     const currentPage = window.location.pathname.split('/').pop();
     
-    // Check which page we're on
     if (currentPage === 'reviewsPage1.html') {
-        // Display first half of games on page 1
+        
         const page1Games = games.slice(0, Math.ceil(games.length / 2));
         displayGames(page1Games);
         
-        // Update pagination links
+        
         document.querySelector('.pagination').innerHTML = `
             <li class="page-item disabled">
                 <a class="page-link" href="#" tabindex="-1">Previous</a>
@@ -179,11 +178,11 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     } 
     else if (currentPage === 'reviewsPage2.html') {
-        // Display second half of games on page 2
+      
         const page2Games = games.slice(Math.ceil(games.length / 2));
         displayGames(page2Games);
         
-        //  pagination links
+        
         document.querySelector('.pagination').innerHTML = `
             <li class="page-item">
                 <a class="page-link" href="reviewsPage1.html">Previous</a>
@@ -196,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
     
-    // Search functionality (works on both pages)
+    
     document.getElementById('searchButton').addEventListener('click', searchGames);
     document.getElementById('searchInput').addEventListener('keyup', function(e) {
         if (e.key === 'Enter') {
@@ -205,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// displayGames(), 
+ 
 function displayGames(gamesToDisplay) {
     const container = document.getElementById('gameContainer');
     container.innerHTML = '';
